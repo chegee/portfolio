@@ -10,12 +10,12 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="js/fm.revealator.jquery.css">
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>	   
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="js/scrip.js"></script>
+    <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/fm.revealator.jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 </head>
@@ -24,20 +24,22 @@
  <div class="container-fluid">
   <div class="header">
    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">LOGO</a>
+    <a class="navbar-brand" href="#">
+      <img src="img/LOGO.png" width="" height="" alt="LOGO">
+    </a>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
      </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
        <ul class="nav navbar-nav">  
         <li class="nav-item">
-         <a class="nav-link" href="#block_0">ОБО МНЕ</a>
+         <a class="nav-link" href="#block_0" rel='m_PageScroll2id'>ОБО МНЕ</a>
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#block_3">ПРИМЕРЫ САЙТОВ</a>
+         <a class="nav-link" href="#block_3" rel='m_PageScroll2id'>ПРИМЕРЫ САЙТОВ</a>
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#block_5">КОНТАКТЫ</a>             </li>
+         <a class="nav-link" href="#block_4" rel='m_PageScroll2id'>КОНТАКТЫ</a>             </li>
        </ul>
       </div>
    </nav>
@@ -74,7 +76,9 @@
    <div class="block_0">
  	<div class="parallax-header-2" data-parallax="scroll" id="block_0" data-image-src="img/comp_2.jpg" class="img-fluid" alt="hesder_2.jpg">
      <div class="des_2">
+      <div class="revealator-zoomin revealator-delay7">
       <h2>Обо мне</h2>
+      </div>
      </div>
     </div>	
    </div>
@@ -97,7 +101,7 @@
          });
         </script> 
          <div id="typed-strings">
-          <p><strong>^1000 Имя: </strong>^600 &nbsp;Олег; <br> <strong>Специализация:</strong> ^600 &nbsp; web разработка сайтов на CMS Wordpress;<br><strong> Вид занятости:</strong> ^600 &nbsp; freelance;<br><strong> Опыт: </strong>^600 &nbsp; 5 лет;<br><strong> Стек используемых технологий:</strong> ^600 &nbsp; ;<br><strong> Стек изучаемых технологий:</strong> ^600 &nbsp; ;<br><strong> Профильное образование:</strong> ^600 &nbsp; курсы ИТМО;<br><strong> Ключевые навыки:</strong> ^600 <br> &nbsp;-&nbsp; Создание шаблонов для CMS Wordpress, <br> &nbsp;-&nbsp; Интеграция шаблонов в CMS, <br> &nbsp;-&nbsp; Редизайн шаблонов, <br> &nbsp;-&nbsp; Перенос вёрстки с других типов CMS, <br> &nbsp;-&nbsp; Разработка с нуля, <br> &nbsp;-&nbsp; Настройка и оптимизация.
+          <p><strong>^1000 Имя: </strong>^600 &nbsp;Олег; <br> <strong>Специализация:</strong> ^600 &nbsp; web разработка сайтов на CMS Wordpress;<br><strong> Вид занятости:</strong> ^600 &nbsp; freelance;<br><strong> Опыт: </strong>^600 &nbsp; 5 лет;<br><strong> Стек используемых технологий:</strong> ^600 &nbsp; HTML5 /CSS3 /JavaScript /Jquery /Gulp /Git /PHP /LESS /SVG ;<br><strong> Стек изучаемых технологий:</strong> ^600 &nbsp;TypeScript,&nbsp;Vue ;<br><strong> Профильное образование:</strong> ^600 &nbsp; курсы ИТМО;<br><strong> Ключевые навыки:</strong> ^600 <br> &nbsp;-&nbsp; Создание шаблонов для CMS Wordpress, <br> &nbsp;-&nbsp; Интеграция шаблонов в CMS, <br> &nbsp;-&nbsp; Редизайн шаблонов, <br> &nbsp;-&nbsp; Перенос вёрстки с других типов CMS, <br> &nbsp;-&nbsp; Разработка с нуля, <br> &nbsp;-&nbsp; Настройка и оптимизация.
           </p>  
          </div>
           <span id="typed"></span>        
@@ -109,7 +113,9 @@
   <div class="block_2">
    <div class="parallax-header-2" data-parallax="scroll" id="block_3" >
     <div class="des_2">
+      <div class="revealator-zoomin revealator-delay7">
       <h2>Примеры сайтов</h2>
+      </div>
     </div>
    </div>
   </div>
@@ -125,29 +131,31 @@
   <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
    <div class="trn_text_box">
     <div class="revealator-zoomin revealator-delay7">
-     <div class="text_box">           
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vero repellendus aperiam suscipit, at, sint officia eius cum quae nihil fugit reprehenderit quibusdam perspiciatis officiis. Optio reprehenderit dolorem ad accusamus!</p>     
+     <div class="text_box">
+       <h1>Сайт визитка</h1>           
+       <p>Адаптивный сайт-визитка французкого симфонического оркестра на WordPress, с применением фреймворка Bootstrap. Сайт содержит небольшую встроенную галлерею, контактную форму, раздел с видео галлереей (интеграция с видеохостингом you tube), раздел с аудио записями (интеграция с аудиохостингом sound cloud) Сайт полностью адаптируется под любые разрешения экранов, работает в любых браузерах, на любых операционных системах.</p>     
      </div>
     </div>
    </div> 
   </div>
  </div>
  <div class="row no-gutters">
-  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"> 
-   <div class="trn">
+  <div class="col-12 col-sm-12 order-sm-first order-last col-md-6 order-md-first order-last col-lg-6 col-xl-6">  
+   <div class="trn_text_box">
     <div class="revealator-zoomin revealator-delay7">
-     <img src="img/screen2.png" class="img-fluid" alt="Responsive image">
+     <div class="text_box">
+       <h1>Сайт каталог</h1>           
+       <p>Адаптивный сайт на WordPress, с применением фреймворка Bootstrap. Сайт содержит слайдер в шапке, несколько галлерей изображений, контактные формы, адаптивные таблицы, карту Google. Сайт полностью адаптируется под любые разрешения экранов, работает в любых браузерах, на любых операционных системах.</p>      
+     </div>
     </div>
    </div>
   </div>
-  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-   <div class="trn_text_box">
-    <div class="revealator-zoomin revealator-delay7">
-     <div class="text_box">           
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vero repellendus aperiam suscipit, at, sint officia eius cum quae nihil fugit reprehenderit quibusdam perspiciatis officiis. Optio reprehenderit dolorem ad accusamus!</p>      
+  <div class="col-12 col-sm-12 order-sm-last order-first col-md-6 order-md-last order-first col-lg-6 col-xl-6">
+    <div class="trn">
+      <div class="revealator-zoomin revealator-delay7">
+       <img src="img/screen2.png" class="img-fluid" alt="Responsive image">
+      </div>
      </div>
-    </div>
-   </div> 
   </div>
  </div>
  <div class="row no-gutters">
@@ -161,31 +169,63 @@
   <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
    <div class="trn_text_box">
     <div class="revealator-zoomin revealator-delay7">
-	    <div class="text_box">	    	    
- 		   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vero repellendus aperiam suscipit, at, sint officia eius cum quae nihil fugit reprehenderit quibusdam perspiciatis officiis. Optio reprehenderit dolorem ad accusamus!</p> 	    
+	    <div class="text_box">
+        <h1>Сайт магазин</h1>	    	    
+ 		   <p>Адаптивный сайт на WordPress, с применением фреймворка Bootstrap. Сайт содержит слайдер в шапке, несколько галерей изображений, контактные формы, блог с возможностью комментариев, а так-же магазин на фреймворке WooCommerce. Сайт полностью адаптируется под любые разрешения экранов, работает в любых браузерах, на любых операционных системах.</p> 	    
       </div>
  	   </div>
     </div>	
    </div>
   </div>  
  </div>
-
+ <div class="block_4">
+  <div class="parallax-header-2" data-parallax="scroll" id="block_4" >
+   <div class="des_2">
+    <div class="revealator-zoomin revealator-delay7">
+     <h2>Контакты</h2>
+     </div>
+   </div>
+  </div>
+ </div>
 <div class="row no-gutters">
   <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">	
-   
-  </div>
-  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-   <div class="trn_text_box">
+    <div class="trn_text_box">
     
-	    <div class="text_box" id="block_5">	    	    
+	    <div class="text_box" id="block_5">
+        <form id="contact-form" role='form' action="" method="POST">
+          <div class="form-group">
+              <label class="control-label" for="_subject">Имя</label>
+              <input class="form-control" type="text" name="_subject" placeholder="Ваше имя">
+          </div>
+          <div class="form-group">
+              <label class="control-label" for="_replyto">На какой E-Mail вам ответить?</label>
+              <input class="form-control" type="email" name="_replyto" placeholder="E-Mail для ответа">
+          </div>
+          <div class="form-group">
+              <label class="control-label" for="">Ваше сообщение:</label>
+              <textarea rows="10" class="form-control" name="body" placeholder="Ваше сообщение"></textarea>
+          </div>
+          <input class="btn btn-primary" type="submit" value="Отправить"> или <a class="trg-ml" href="mailto: yogachar3@yandex.ru">НАПИСАТЬ МНЕ НАПРЯМУЮ</a>
+      </form>   	    
  		   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vero repellendus aperiam suscipit, at, sint officia eius cum quae nihil fugit reprehenderit quibusdam perspiciatis officiis. Optio reprehenderit dolorem ad accusamus!</p> 	    
       </div>
  	   
-    </div>	
+    </div>
+  </div>
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+    <div class="trn_text_box_mail">
+      
+      </div>
    </div>
   </div>  
 
   </main>
+  <footer>
+    <div class="row no-gutters">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">	
+       
+      </div>
+  </footer>
   </div>
 
 </body>

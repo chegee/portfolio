@@ -1,8 +1,16 @@
-$("body").on('click', '[href*="#"]', function(e){
-  var fixed_offset = 57;
-  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 777);
-  e.preventDefault();
+(function($) {
+  $(window).on("load", function() {
+    $("a[rel='m_PageScroll2id']").mPageScroll2id({
+  offset: 60
 });
+  });
+})(jQuery);
+
+// $("body").on('click', '[href*="#"]', function(e){
+//   var fixed_offset = 57;
+//   $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 777);
+//   e.preventDefault();
+// });
 
 // $("#navbarNav li a").click(function() {
 //   $("html, body").animate({
@@ -62,12 +70,12 @@ $("body").on('click', '[href*="#"]', function(e){
     });
 });*/
 
-function externalLinks() {
-    links = document.getElementsByTagName("a");
-    for (i=0; i<links.length; i++) {
-      link = links[i];
-      if (link.getAttribute("href") && link.getAttribute("rel") == "external")
-      link.target = "_blank";
-    }
-   }
-   window.onload = externalLinks;
+// function externalLinks() {
+//     links = document.getElementsByTagName("a");
+//     for (i=0; i<links.length; i++) {
+//       link = links[i];
+//       if (link.getAttribute("href") && link.getAttribute("rel") == "external")
+//       link.target = "_blank";
+//     }
+//    }
+//    window.onload = externalLinks;
