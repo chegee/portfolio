@@ -1,10 +1,16 @@
 (function($) {
   $(window).on("load", function() {
     $("a[rel='m_PageScroll2id']").mPageScroll2id({
-  offset: 60
+  offset: 96
 });
   });
 })(jQuery);
+
+
+
+$(document).on('click',function(){
+  $('.collapse').collapse('hide');
+});
 
 // $("body").on('click', '[href*="#"]', function(e){
 //   var fixed_offset = 57;

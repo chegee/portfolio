@@ -52,7 +52,7 @@ a.mPS2id-highlight-first{
 }
 
 .navbar {
-    background-color: rgba(52, 58, 64, 0.86)!important;
+    background-color: rgba(52, 58, 64, 0.97)!important;
     position: fixed !important; 
     width: 100%;
     border-bottom: 1px solid #6c6c98;
@@ -65,9 +65,10 @@ a.mPS2id-highlight-first{
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.89) !important;
+    font-family: 'Earth Phototype', sans-serif;
     }
 ul.nav.navbar-nav {
-    background: #32363cc9;
+    background: rgb(50, 57, 67);
     /* margin-top: 11px; */
 }
 
@@ -119,6 +120,7 @@ ul.nav.navbar-nav {
 li.nav-item {
   display: flex;
     justify-content: center;
+    
 }
 
 h1 {
@@ -133,9 +135,9 @@ h2 {
   font-family: 'Phantom cyr-lat', sans-serif;
 }
 
-a.nav-link {
+/* a.nav-link .__mPS2id ._mPS2id-h .mPS2id-clicked {
   font-family: 'Comfortaa', sans-serif;
-}
+} */
 
 span#typed {
   font-family: 'Comfortaa', sans-serif;
